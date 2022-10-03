@@ -11,6 +11,7 @@ const Headers = () => {
       </div>
       <div className="search-wrap">
         <img src={searchIcon} alt="" />
+        <input type="text" placeholder='Collection, Item or User' />
       </div>
     </div>
    </>
