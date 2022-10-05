@@ -1,0 +1,129 @@
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+.headerClass {
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerClass > div {
+  margin: 0 10px;
+}
+.headerClass .logo img {
+  width: 200px;
+}
+.headerClass .searchWrap {
+  display: flex;
+  background-color: #19181C;
+  padding: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  flex-grow: 1;
+  border-radius: 50px;
+}
+.headerClass .searchWrap img {
+  background-color: transparent;
+  width: 25px;
+}
+.headerClass .searchWrap input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  outline: none;
+  margin-left: 10px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.headerClass .headerItems a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 10px;
+}
+.headerClass .headerActions {
+  display: flex;
+  align-items: center;
+}
+.headerClass .headerActions > div {
+  margin-right: 10px;
+}
+.headerClass .headerActions > button {
+  margin-left: 10px;
+}
+.headerClass .headerActions .changeThemeWrap {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #19181C;
+  border-radius: 50px;
+}
+.headerClass .headerActions .changeThemeWrap img {
+  height: 25px;
+  width: 25px;
+  background: transparent;
+}
+.headerClass .headerActions button {
+  background: linear-gradient(to right, #59f9b7, #66feea);
+  color: black;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 50px;
+}
+
+.collectionCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #151718;
+  color: #fff;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.collectionCard figure {
+  margin-bottom: 0;
+  width: 100%;
+}
+.collectionCard figure img {
+  width: 100%;
+}
+.collectionCard .details {
+  padding: 20px;
+}
+.collectionCard .details .name-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.collectionCard .details .name-wrap h4 {
+  font-size: 18px;
+}
+.collectionCard .details .name-wrap span {
+  font-size: 14px;
+  margin-top: 2px;
+  margin-bottom: 6px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.collectionCard .details .price-wrap {
+  display: flex;
+  align-items: center;
+}
+.collectionCard .details .price-wrap img {
+  width: 15px;
+  margin-right: 10px;
+}
+.collectionCard .details .price-wrap h5 {
+  font-size: 18px;
+  margin-bottom: 0;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
