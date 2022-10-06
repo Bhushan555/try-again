@@ -2,6 +2,7 @@ import React from 'react'
 import CollectionCard from './CollectionCard'
 
 const PunkList = ({punkListData}) => {
+  console.log(punkListData)
   return (
     <>
     <div className='punkList'> 
@@ -9,7 +10,6 @@ const PunkList = ({punkListData}) => {
         punkListData.map((punk) => {
             <div>
                 <CollectionCard
-            
                 id={punk.token_id}
                 name={punk.name}
                 traits={punk.traits}
@@ -19,6 +19,13 @@ const PunkList = ({punkListData}) => {
         })
       }
     </div>
+    <CollectionCard
+            
+            id={5}
+            name={'5sbhsbhb'}
+            traits={[{'value':0}]}
+            image={'punk.image_original_url'}
+            />
     <CollectionCard
             
             id={5}

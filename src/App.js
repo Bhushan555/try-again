@@ -9,13 +9,16 @@ import PunkList from './components/PunkList';
 
 function App() {
   const [punkListData, setPunkListData]= useState([]);
-  useEffect(()=>{
-    const getMyNfts=async()=>{
-      const openSeaData = await axios.get('https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=0x5641D5D30d224E61e943864E8b935019DE56D344')
-      if(setPunkListData.length>0){
-        setPunkListData(openSeaData.data.assets)
-      }
+  
+  const getMyNfts=async()=>{
+    const openSeaData = await axios.get('https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=0x5641D5D30d224E61e943864E8b935019DE56D344')
+    if(punkListData.length>0){
+      setPunkListData(openSeaData.data.assets)
+      console.log(openSeaData.data.assets)
     }
+  }
+  
+  useEffect(()=>{
     getMyNfts()
   },[])
 
