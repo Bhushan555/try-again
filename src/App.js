@@ -19,7 +19,9 @@ function App() {
   }
   
   useEffect(()=>{
-    getMyNfts()
+    getMyNfts();
+    jhdjbdj;
+    iirji;
   },[])
 
   return (
